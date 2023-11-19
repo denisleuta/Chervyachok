@@ -15,6 +15,8 @@
 #include "Obstacle.h"
 #include "SnakeGames.h"
 #include "Timer.h"
+/* Не делай так. Даже если сильно хочется. Вырабатывай привчку 
+ * везде писать конкретный namespace */
 using namespace std;
 int main() {
     setlocale(LC_ALL, "RU");

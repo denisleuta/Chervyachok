@@ -27,6 +27,7 @@ void HighScoreManager::SortAndSaveScores() {
 
     std::ofstream file("highscores.txt");
     if (file.is_open()) {
+        /* хороший фор, правильный фор */
         for (const auto& entry : highScores) {
             file << entry.first << " " << entry.second << std::endl;
         }
