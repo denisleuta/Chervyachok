@@ -5,6 +5,8 @@ void GameRenderer::Draw(const Snake& snake, const Fruit& fruit, const std::vecto
     system("cls");
     for (int i = 0; i < width + 1; i++)
         std::cout << "#";
+    /* endl обычно не очень хорошая идея, тем более для системы в реальном
+     * времени, как игра. Узнай, чем он отличается от '\n' */
     std::cout << std::endl;
 
     for (int i = 0; i < height; i++) {

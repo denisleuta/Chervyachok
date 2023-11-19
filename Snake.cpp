@@ -10,6 +10,8 @@ void Snake::Move(int newX, int newY) {
     int prev2X, prev2Y;
     tailX[0] = x;
     tailY[0] = y;
+    /* Возможно, вектор был бы удобнее. Вставлял бы в начало
+     * новую позицию, остальные сами подвинутся */
     for (int i = 1; i < nTail; i++) {
         prev2X = tailX[i];
         prev2Y = tailY[i];
